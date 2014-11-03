@@ -8,10 +8,18 @@
 	<link href="css/yostyle.css" type="text/css" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 	<script type="text/javascript">
-	// 	angular.module('myApp', []);
-	// 	function myController($scope, $http){
-	// 		$scope.
-	// 	}
+		angular.module('myApp', []);
+		function myController($scope, $http){
+			$scope.addSub = function(id){
+				$http.post('/yo/' + id)
+				.success(function(data){
+					console.log('success ' + data);
+				})
+				.error(function(data){
+					console.log("error " + data);
+				});
+			}
+		}
 	</script>
 </head>
 <body>
@@ -21,10 +29,10 @@
 
 
 
-	<div class="centered rect2 panel">
+	<div class="centered rect2 panel" ng-controller="myController">
 		<form class="form-horizontal" method="POST" action="http://yotify.ngrok.com/yo/MYLOCATION">
 		      <input type="text" class="yoInput" style="text-transform: uppercase;" name="yoName" placeholder="yo username">
-		      <input type="submit" class="yoSubmit margintop" value="Subscribe">
+		      <input type="submit" class="yoSubmit margintop" value="Subscribe" ng-click="addSub("54576f1946e1cb9c07000002")">
 		</form>
 	</div>
 
