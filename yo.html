@@ -7,32 +7,16 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> 
 	<link href="css/yostyle.css" type="text/css" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-	<script type="text/javascript">
-		angular.module('myApp', []);
-		function myController($scope, $http){
-			$scope.addSub = function(id){
-				$http.post('/yo/' + id)
-				.success(function(data){
-					console.log('success ' + data);
-				})
-				.error(function(data){
-					console.log("error " + data);
-				});
-			}
-		}
-	</script>
 </head>
 <body>
 	<div class="text-center centered">
 			<h1 class="text-center top"><strong  style="color:#9B59B6">Yo Someone</strong></h1>
 	</div>
 
-
-
 	<div class="centered rect2 panel" ng-controller="myController">
-		<form class="form-horizontal" method="POST" action="http://yotify.ngrok.com/yo/MYLOCATION">
+		<form class="form-horizontal" method="POST" action="http://yotify.ngrok.com/yo/54576f1946e1cb9c07000002">
 		      <input type="text" class="yoInput" style="text-transform: uppercase;" name="yoName" placeholder="yo username">
-		      <input type="submit" class="yoSubmit margintop" value="Subscribe" ng-click="addSub("54576f1946e1cb9c07000002")">
+		      <input type="submit" class="yoSubmit margintop" value="Subscribe">
 		</form>
 	</div>
 
