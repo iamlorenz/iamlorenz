@@ -463,3 +463,58 @@ h3 {
     opacity: 1;
   }
 }
+
+#yoForm
+{
+    border-radius: 2px;    
+    border:2px solid #9B59B6;          
+    width: 220px;
+    height: 50px;
+    margin: 100px auto 50px;
+    overflow: hidden;
+}
+#yoInput, 
+#yoButton,
+#yoMsg{
+    float: left;
+}
+
+#yoInput {
+    padding:0px 0px 0px 20px;
+    height: 100%;
+    width: 145px;
+    font:  13px Montserrat, arial, helvetica;
+    text-transform: uppercase;
+    border: none;
+    color: #34495E;
+    outline: none;
+}
+#yoButton {       
+    background-color: #9B59B6;
+    border: none;
+    height: 100%;
+    width: 55px;
+    cursor: pointer;
+    font: bold 16px Montserrat, Arial, Helvetica;
+    color: #ffffff; 
+}
+
+#yoButton:hover {       
+    background-color: #8E44AD;
+}   
+
+#yoButton::-moz-focus-inner {
+       border: 0; 
+}
+ #yoMsg {
+  background-color: #9B59B6;
+    border: none;
+    height: 50px;
+    width: 220px;
+    font: bold 15px Montserrat, Arial, Helvetica;
+    color: #ffffff; 
+    text-align: center;
+    line-height: 50px; 
+    vertical-align:middle;
+    cursor: pointer;
+  }

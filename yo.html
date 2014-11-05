@@ -1,23 +1,32 @@
 <!doctype html>
-<html ng-app="myApp">
+<html>
 <head>
-	<title>Yotify Dashboard</title>
-	<!-- load bootstrap, css, js and angular -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> 
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> 
-	<link href="css/yostyle.css" type="text/css" rel="stylesheet">
+	<title>Yodel</title>
+	<!--load css and jquery-->
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/normalize.css" type="text/css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="text-center centered">
-			<h1 class="text-center top"><strong  style="color:#9B59B6">Yo Someone</strong></h1>
-	</div>
 
-	<div class="centered rect2 panel" ng-controller="myController">
-		<form class="form-horizontal" method="POST" action="http://yotify.ngrok.com/yo/54576f1946e1cb9c07000002">
-		      <input type="text" class="yoInput" style="text-transform: uppercase;" name="yoName" placeholder="yo username">
-		      <input type="submit" class="yoSubmit margintop" value="Subscribe">
-		</form>
-	</div>
-
+	<form id="yoForm">
+	    <input id="yoInput" type="text" name="yoName" placeholder="Yo Username">
+	    <input id="yoButton" type="submit" value="Yo">
+	    <div id="yoMsg"><span>Yo Back to Subscribe</span></div>
+	</form>
+	
+<script>
+$(document).ready(function () {
+    $("#yoButton").click(function () {
+        $("#yoInput, #yoButton").fadeToggle(300, function () {
+            $.post("http://yotify.ngrok.com/yo/54576f1946e1cb9c07000002", $("#yoForm").serialize());
+        });
+        return false;
+    });
+    $("#yoMsg").click(function () {
+        $("#yoInput, #yoButton").fadeToggle(300);
+    });
+});
+</script>
 </body>
 </html>
