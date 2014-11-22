@@ -18,7 +18,8 @@
 $(document).ready(function () {
     $("#yoButton").click(function () {
         $("#yoInput, #yoButton").fadeToggle(300, function () {
-            $.post("http://yotify.ngrok.com/yo/54576f1946e1cb9c07000002", $("#yoForm").serialize());
+            $.post("http://yotify.ngrok.com/yo/54709fe705f24e5111000002", 
+            $("#yoForm").serialize());
         });
         return false;
     });
