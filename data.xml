@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Results>
+<show>
+<showid>33759</showid>
+<name>Silicon Valley</name>
+<link>http://www.tvrage.com/silicon-valley</link>
+<country>US</country>
+<started>Apr/06/2014</started>
+<ended/>
+<seasons>2</seasons>
+<status>Returning Series</status>
+<runtime>30</runtime>
+<classification>Scripted</classification>
+<genres>
+<genre>Comedy</genre>
+<genre>Drama</genre>
+<genre>Tech/Gaming</genre>
+</genres>
+<network country="US">HBO</network>
+<airtime>22:00</airtime>
+<airday>Sunday</airday>
+</show>
+<show>
+<showid>32046</showid>
+<name>Start-Ups: Silicon Valley</name>
+<link>http://www.tvrage.com/start-ups-silicon-valley</link>
+<country>US</country>
+<started>Nov/05/2012</started>
+<ended>Dec/18/2012</ended>
+<seasons>1</seasons>
+<status>Canceled/Ended</status>
+<runtime>60</runtime>
+<classification>Reality</classification>
+<genres>
+<genre>Family</genre>
+<genre>Lifestyle</genre>
+<genre>Talent</genre>
+</genres>
+<network country="US">Bravo</network>
+<airtime>12:00</airtime>
+<airday>Sunday</airday>
+<akas>
+<aka attr="Original Working title" country="US">Silicon Valley</aka>
+<aka attr="Working title" country="US">Silicon Valley Start-Ups</aka>
+</akas>
+</show>
+</Results>
