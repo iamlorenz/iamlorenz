@@ -22,17 +22,17 @@ h1{
 h1:hover{
 	cursor:pointer;
 	animation-name: titleanimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-delay:.2s;
     animation-iteration-count: infinite;
 }
 
 @keyframes titleanimation {
-    0%   {color: #FF3333;}
-    20%  {color: #595EC8}
-    40%  {color: #ECCD5F;}
-    60%  {color: #C879C9;}
-    80%  {color: #74D46C;}
+    0%   {color: #2bde05;}
+    20%  {color: #05de4c}
+    40%  {color: #0597de;}
+    60%  {color: #4c05de;}
+    80%  {color: #b805de;}
     100% {color: #CB8705;}
 }
 
