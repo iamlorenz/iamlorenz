@@ -1,0 +1,77 @@
+//variables
+$main: #f9f9f9;
+$light:#f9f9f9;
+$accent: #56545C;
+$link: #847F9B; //#ECCD5F
+$weight:500;
+$boxwidth: 380px;
+
+//basics
+body{
+	background-color: #27272A;
+	font-family: "europa", Menlo, Courier, sans-serif;
+	font-weight: $weight;
+	color: $main;
+	padding: 60px 60px;
+	line-height: 28px;
+}
+h1{
+	font-size: 20px;
+	font-weight:$weight;
+	color:$main;
+}
+h1:hover{
+	cursor:pointer;
+	animation-name: titleanimation;
+    animation-duration: 2s;
+    animation-delay:.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titleanimation {
+    0%   {color: #FF3333;}
+    20%  {color: #595EC8}
+    40%  {color: #ECCD5F;}
+    60%  {color: #C879C9;}
+    80%  {color: #74D46C;}
+    100% {color: #CB8705;}
+}
+
+h1:hover{
+
+}
+h2,p{
+	color:$accent;
+	font-size:16px;
+	font-weight:$weight;
+
+}
+h3{
+	color: $light;
+	font-size: 10px;
+	letter-spacing: 3.5px;
+	margin: 0;
+
+}
+a{
+	color: $link;
+	text-decoration: none;
+}
+a:hover{
+	background-color: #2D2D31;
+}
+
+//specifics
+.container{
+	display:flex;
+  	flex-flow: row wrap;
+  	justify-content: flex-start;
+}
+.headline{
+	margin-bottom:80px;
+}
+.box{
+	margin: 20px 55px 40px 0;
+	p{margin:0;}
+	width:$boxwidth;
+}
