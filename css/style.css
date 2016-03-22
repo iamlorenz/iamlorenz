@@ -58,7 +58,8 @@ h3 {
   color: #f9f9f9;
   font-size: 10px;
   letter-spacing: 4.5px;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 8px; }
 
 a {
   color: #2AD178;
@@ -81,13 +82,47 @@ a:hover {
           justify-content: flex-start; }
 
 .headline {
-  margin-bottom: 80px; }
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between; }
+  .headline .nav {
+    margin-top: 16px; }
+    .headline .nav a:hover {
+      background-color: #030D28;
+      color: #2AD178; }
+    .headline .nav a {
+      margin-left: 14px;
+      color: #f9f9f9; }
+    .headline .nav a:first-child {
+      margin-left: 0; }
 
 .box {
   margin: 20px 55px 40px 0;
   width: 380px; }
   .box p {
     margin: 0; }
+
+hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #202A40;
+  margin-bottom: 60px; }
+
+.footer {
+  border-top: 1px solid #202A40;
+  font-size: 13px;
+  color: #202A40;
+  padding-top: 8px;
+  margin-top: 25px; }
 
 @media screen and (min-width: 220px) {
   body {
