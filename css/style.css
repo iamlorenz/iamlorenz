@@ -28,30 +28,26 @@ h1:hover {
 @-webkit-keyframes titleanimation {
   0% {
     color: #f9f9f9; }
-  20% {
+  25% {
     color: #2AD178; }
-  40% {
-    color: #030D28; }
-  60% {
+  55% {
     color: #f9f9f9; }
-  80% {
+  75% {
     color: #2AD178; }
   100% {
-    color: #030D28; } }
+    color: #f9f9f9; } }
 
 @keyframes titleanimation {
   0% {
     color: #f9f9f9; }
-  20% {
+  25% {
     color: #2AD178; }
-  40% {
-    color: #030D28; }
-  60% {
+  55% {
     color: #f9f9f9; }
-  80% {
+  75% {
     color: #2AD178; }
   100% {
-    color: #030D28; } }
+    color: #f9f9f9; } }
 
 h2, p {
   color: #666A74;

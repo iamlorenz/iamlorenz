@@ -37,11 +37,10 @@ h1:hover{
 
 @keyframes titleanimation {
     0%   {color: $main;}
-    20%  {color: $link;}
-    40%  {color: $bg;}
-    60%  {color: $main;}
-    80%  {color: $link;}
-    100% {color: $bg;}
+    25%   {color: $link;}
+    55%   {color: $main;}
+    75%   {color: $link;}
+    100%  {color: $main;}
 }
 
 h1:hover{
