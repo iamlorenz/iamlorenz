@@ -1,19 +1,27 @@
 //variables
+$bg: #030D28;
 $main: #f9f9f9;
 $light:#f9f9f9;
-$accent: #56545C;
-$link: #847F9B; //#ECCD5F
+$accent: #666A74;
+$link: #2AD178; //#ECCD5F
+$link-hover: #202A40;
 $weight:500;
 $boxwidth: 380px;
 
 //basics
 body{
-	background-color: #27272A;
+	background-color: $bg;
 	font-family: "europa", Menlo, Courier, sans-serif;
 	font-weight: $weight;
 	color: $main;
 	line-height: 28px;
 }
+
+.base{
+	max-width: 870px;
+	margin:0 auto;
+}
+
 h1{
 	font-size: 20px;
 	font-weight:$weight;
@@ -28,12 +36,12 @@ h1:hover{
 }
 
 @keyframes titleanimation {
-    0%   {color: #2bde05;}
-    20%  {color: #05de4c}
-    40%  {color: #0597de;}
-    60%  {color: #4c05de;}
-    80%  {color: #b805de;}
-    100% {color: #CB8705;}
+    0%   {color: $main;}
+    20%  {color: $link;}
+    40%  {color: $bg;}
+    60%  {color: $main;}
+    80%  {color: $link;}
+    100% {color: $bg;}
 }
 
 h1:hover{
@@ -48,7 +56,7 @@ h2,p{
 h3{
 	color: $light;
 	font-size: 10px;
-	letter-spacing: 3.5px;
+	letter-spacing: 4.5px;
 	margin: 0;
 
 }
@@ -57,7 +65,7 @@ a{
 	text-decoration: none;
 }
 a:hover{
-	background-color: lighten(#27272A, 5%);
+	background-color: $link-hover;
 }
 
 //specifics
