@@ -1,10 +1,11 @@
 //variables
-$bg: #030D28;
-$main: #f9f9f9;
-$light:#f9f9f9;
-$accent: #5C6B7D;
-$link: #2AD178; //#ECCD5F
-$link-hover: #202A40;
+$bg: #fafafa;
+$main: #5C6B7D;
+$light:#B4C0CF;
+$accent: #7D8895;
+$divider: #D1E2E8;
+$link: #0076FF; //#ECCD5F
+$link-hover: #EFF4FA;
 $weight:500;
 $boxwidth: 380px;
 
@@ -68,15 +69,15 @@ h1:hover{
 
 }
 h2,p{
-	color:$accent;
+	color:$light;
 	font-size:16px;
 	font-weight:$weight;
 
 }
 h3{
 	color: $light;
-	font-size: 10px;
-	letter-spacing: 4.5px;
+	font-size: 12px;
+	letter-spacing: 3px;
 	margin: 0;
 	margin-bottom: 8px;
 
@@ -100,8 +101,8 @@ a:hover{
 	@include row-wrap(space-between);
 	.nav{
 		margin-top: 16px;
-		a:hover{ background-color: $bg; color: $link;}
-		a{ margin-left: 14px;color: $main;}
+		a:hover{ background-color: $link-hover;}
+		a{ margin-left: 14px;color: $link;}
 		a:first-child{margin-left:0;}
 	}
 }
@@ -114,13 +115,13 @@ a:hover{
 hr{
 	width: 100%;
 	border: none;
-	border-bottom: 1px solid $link-hover;
+	border-bottom: 1px solid $divider;
 	margin-bottom: 60px;
 }
 .footer{
-	border-top: 1px solid $link-hover;
+	border-top: 1px solid $divider;
 	font-size: 13px;
-	color: $link-hover;
+	color: darken($divider, 5%);
 	padding-top: 8px;
 	margin-top:25px;
 }
@@ -137,12 +138,3 @@ hr{
 @media screen and (min-width: 540px) {
 	body{padding: 60px;}
 }
-
-
-
-
-
-
-
-
-

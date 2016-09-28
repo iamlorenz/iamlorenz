@@ -1,8 +1,8 @@
 body {
-  background-color: #030D28;
+  background-color: #fafafa;
   font-family: "europa", Menlo, Courier, sans-serif;
   font-weight: 500;
-  color: #f9f9f9;
+  color: #5C6B7D;
   line-height: 28px; }
 
 .base {
@@ -12,7 +12,7 @@ body {
 h1 {
   font-size: 20px;
   font-weight: 500;
-  color: #f9f9f9; }
+  color: #5C6B7D; }
 
 h1:hover {
   cursor: pointer;
@@ -27,46 +27,46 @@ h1:hover {
 
 @-webkit-keyframes titleanimation {
   0% {
-    color: #f9f9f9; }
+    color: #5C6B7D; }
   25% {
-    color: #2AD178; }
+    color: #0076FF; }
   55% {
-    color: #f9f9f9; }
+    color: #5C6B7D; }
   75% {
-    color: #2AD178; }
+    color: #0076FF; }
   100% {
-    color: #f9f9f9; } }
+    color: #5C6B7D; } }
 
 @keyframes titleanimation {
   0% {
-    color: #f9f9f9; }
+    color: #5C6B7D; }
   25% {
-    color: #2AD178; }
+    color: #0076FF; }
   55% {
-    color: #f9f9f9; }
+    color: #5C6B7D; }
   75% {
-    color: #2AD178; }
+    color: #0076FF; }
   100% {
-    color: #f9f9f9; } }
+    color: #5C6B7D; } }
 
 h2, p {
-  color: #5C6B7D;
+  color: #B4C0CF;
   font-size: 16px;
   font-weight: 500; }
 
 h3 {
-  color: #f9f9f9;
-  font-size: 10px;
-  letter-spacing: 4.5px;
+  color: #B4C0CF;
+  font-size: 12px;
+  letter-spacing: 3px;
   margin: 0;
   margin-bottom: 8px; }
 
 a {
-  color: #2AD178;
+  color: #0076FF;
   text-decoration: none; }
 
 a:hover {
-  background-color: #202A40; }
+  background-color: #EFF4FA; }
 
 .container {
   display: -webkit-box;
@@ -97,11 +97,10 @@ a:hover {
   .headline .nav {
     margin-top: 16px; }
     .headline .nav a:hover {
-      background-color: #030D28;
-      color: #2AD178; }
+      background-color: #EFF4FA; }
     .headline .nav a {
       margin-left: 14px;
-      color: #f9f9f9; }
+      color: #0076FF; }
     .headline .nav a:first-child {
       margin-left: 0; }
 
@@ -114,13 +113,13 @@ a:hover {
 hr {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #202A40;
+  border-bottom: 1px solid #D1E2E8;
   margin-bottom: 60px; }
 
 .footer {
-  border-top: 1px solid #202A40;
+  border-top: 1px solid #D1E2E8;
   font-size: 13px;
-  color: #202A40;
+  color: #c0d7e0;
   padding-top: 8px;
   margin-top: 25px; }
 
