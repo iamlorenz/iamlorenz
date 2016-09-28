@@ -1,8 +1,8 @@
 //variables
-$bg: #fafafa;
+$bg: #ffffff;
 $main: #5C6B7D;
-$light:#B4C0CF;
-$accent: #7D8895;
+$light:#7D8895;
+$accent: #B4C0CF;
 $divider: #D1E2E8;
 $link: #0076FF; //#ECCD5F
 $link-hover: #EFF4FA;
@@ -72,10 +72,9 @@ h2,p{
 	color:$light;
 	font-size:16px;
 	font-weight:$weight;
-
 }
 h3{
-	color: $light;
+	color: $accent;
 	font-size: 12px;
 	letter-spacing: 3px;
 	margin: 0;
