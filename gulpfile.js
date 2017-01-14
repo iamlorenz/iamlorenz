@@ -18,10 +18,10 @@ gulp.task('styles', function() {
   return gulp.src('src/styles/style.scss', { style: 'expanded' })
     .pipe(sass())
     .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('static/css/'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('static/css'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
@@ -57,21 +57,6 @@ gulp.task('watch', function() {
   gulp.watch('src/scripts/**/*.js', ['scripts']);
 
   //browser reload
-  gulp.watch(['css/**']).on("change", browserSync.reload);
+  gulp.watch(['src']).on("change", browserSync.reload);
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

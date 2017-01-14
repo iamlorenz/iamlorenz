@@ -1,0 +1,180 @@
+body {
+  margin: auto;
+  background-color: #0e0d21; }
+
+h1 {
+  font-family: "Menlo",Courier,sans-serif;
+  z-index: 2000 !important;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  font-weight: 300;
+  color: #fff; }
+
+h2 {
+  font-family: "Menlo",Courier, sans-serif;
+  z-index: 2000 !important;
+  font-size: .9rem;
+  line-height: 2.0rem;
+  color: #0085ff;
+  font-weight: 800;
+  letter-spacing: 5px; }
+
+svg {
+  width: 100%;
+  height: 1000px; }
+
+a {
+  font: 800 .8rem "Menlo",Courier, sans-serif;
+  color: #fb94d0;
+  text-decoration: none;
+  margin-right: 24px;
+  line-height: 1.6rem; }
+
+a:hover {
+  -webkit-animation-name: linkanimation;
+          animation-name: linkanimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+.box {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 2000 !important; }
+
+.social {
+  bottom: 20px;
+  padding: 0 12px; }
+
+.news {
+  top: 20px;
+  padding: 0 20px 20px 20px;
+  text-align: center; }
+
+@-webkit-keyframes linkanimation {
+  0% {
+    color: #fb94d0; }
+  20% {
+    color: #fa6dbf; }
+  40% {
+    color: #f845ad; }
+  60% {
+    color: #e30888; }
+  80% {
+    color: #f845ad; }
+  100% {
+    color: #fa6dbf; } }
+
+@keyframes linkanimation {
+  0% {
+    color: #fb94d0; }
+  20% {
+    color: #fa6dbf; }
+  40% {
+    color: #f845ad; }
+  60% {
+    color: #e30888; }
+  80% {
+    color: #f845ad; }
+  100% {
+    color: #fa6dbf; } }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  /* Non-prefixed version, currently
+                                  not supported by any browser */ }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translateX(-20%) translateY(-50%);
+      -ms-transform: translateX(-20%) translateY(-50%);
+          transform: translateX(-20%) translateY(-50%);
+  z-index: 2000 !important; }
+
+.links {
+  stroke: none;
+  stroke-opacity: 0.2;
+  z-index: 1000 !important; }
+
+.polygons {
+  fill: none;
+  stroke: none;
+  z-index: 1000 !important;
+  -webkit-transition: all 500ms cubic-bezier(0.415, 0.165, 0.86, 0.645);
+  transition: all 500ms cubic-bezier(0.415, 0.165, 0.86, 0.645);
+  /* custom */ }
+
+.polygons:hover {
+  fill: none;
+  stroke: none;
+  z-index: 1000 !important;
+  margin-top: 20px;
+  -webkit-transition: all 500ms cubic-bezier(0.415, 0.165, 0.86, 0.645);
+  transition: all 500ms cubic-bezier(0.415, 0.165, 0.86, 0.645);
+  /* custom */ }
+
+.polygons :first-child {
+  fill: #1c1a42;
+  z-index: 1000 !important; }
+
+.sites {
+  fill: #3d4880;
+  stroke: none;
+  z-index: 1000 !important; }
+
+.sites :first-child {
+  fill: none;
+  stroke: none;
+  z-index: 1000 !important; }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.5rem; }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 3.1rem; }
+  a {
+    font-size: .95rem;
+    margin-right: 40px; } }
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.9rem; }
+  h2 {
+    font-size: 1.4rem;
+    line-height: 3.5rem; }
+  .container {
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); } }
