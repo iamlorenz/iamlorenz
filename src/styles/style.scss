@@ -72,13 +72,10 @@ h2 {
     @include row-wrap(center);
     z-index: 2000 !important;
   }
-  .social{
-    bottom: 20px;
-    padding: 0 12px;
-  }
+  .social{bottom: 20px;}
   .news{
     top: 20px;
-    padding: 0 20px 20px 20px;
+    a{margin:0 12px;}
     text-align: center;
   }
 
